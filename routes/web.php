@@ -18,4 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/akun', [App\Http\Controllers\ApiAkunController::class, 'get_password']);
+Route::get('/akun/{username}/{password}', [App\Http\Controllers\ApiAkunController::class, 'get_password']);
+
+Route::post('/akun/login', [App\Http\Controllers\ApiAkunController::class, 'get_login']);

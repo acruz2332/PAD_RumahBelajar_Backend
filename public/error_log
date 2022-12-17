@@ -1,0 +1,1 @@
+[16-Dec-2022 07:21:21 UTC] PHP Fatal error:  Cannot use [] for reading in /home/learnwit/public_html/PAD1/app/Http/Controllers/ApiNilaiController.php on line 17

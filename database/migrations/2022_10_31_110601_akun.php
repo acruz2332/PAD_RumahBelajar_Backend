@@ -9,8 +9,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('akun', function (Blueprint $table){
-            $table->string('username')->primary();
-            $table->string('password');
+            $table->string('username', 20)->primary()->unique();
+            $table->string('password', 20);
             $table->enum('role', ['guru', 'murid']);
             $table->string('email');
         });

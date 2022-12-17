@@ -20,5 +20,12 @@ class AkunSeeder extends Seeder
             'role' => 'guru',
             'email' => 'akbar.fajar2311@gmail.com',
         ]);
+
+        DB::table('akun')->insert([
+            'username' => 'antoniuswisnu',
+            'password' => 'antonius123',
+            'role' => 'murid',
+            'email' => 'antonius.kri@gmail.com',
+        ]);
     }
 }
